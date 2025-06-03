@@ -1,14 +1,13 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>一言掲示板 - 投稿</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>💬 一言掲示板</h1>
-    <p>ようこそ、<?= $_SESSION['customer']['name'] ?></p>
     <form action="post.php" method="post">
         <p>名前：<input type="text" name="name" required></p>
         <p>コメント：<br>
@@ -16,6 +15,5 @@
         <p><button type="submit">投稿する</button></p>
     </form>
     <p><a href="view.php">▶ 投稿一覧を見る</a></p>
-    <p><a href="logout.php">ログアウト</a></p>
 </body>
 </html>
