@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>一言掲示板 - 投稿</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>💬 一言掲示板</h1>
