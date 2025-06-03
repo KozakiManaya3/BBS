@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>新規登録</h1>
-    <form action="signup-out.php" method="post">
+    <form action="signup-outup.php" method="post">
         <p>ユーザー名：<input type="text" name="name"></p>
         <p>パスワード：<input type="password" name="pass"></p>
         <input type="submit" value="登録">
