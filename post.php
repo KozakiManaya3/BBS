@@ -14,10 +14,10 @@ try {
         'LAA1553893',
         'Bbspass');
 
-    $stmt = $pdo->prepare("INSERT INTO comment (user_id, comment, created_at) VALUES (:user_id, :comment, :created_at)");
+    $stmt = $pdo->prepare("INSERT INTO comment (user_id, content, created_at) VALUES (:user_id, :content, :created_at)");
     $stmt->execute([
         ':user_id' => $_SESSION['customer'],
-        ':comment' => $comment,
+        ':content' => $comment,
         ':created_at' => $time
     ]);
 
