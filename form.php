@@ -7,15 +7,11 @@
     <title>一言掲示板 - 投稿</title>
 </head>
 <body>
-<div class='center'>
     <h1>💬 一言掲示板</h1>
     <p>ようこそ、<?= $_SESSION['customer']['name'] ?>さん</p>
-    <form action="post.php" method="post">
-</div>       
-<div class='left'>
+    <form action="post.php" method="post">       
         <p>名前：<input type="text" name="name" required></p>
         <p>コメント：<br>
-</div>
         <textarea name="comment" rows="4" cols="40" required></textarea></p>
         <p><button type="submit">投稿する</button></p>
     </form>
