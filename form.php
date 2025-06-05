@@ -7,9 +7,11 @@
     <title>一言掲示板 - 投稿</title>
 </head>
 <body>
+<div class='center'>
     <h1>💬 一言掲示板</h1>
     <p>ようこそ、<?= $_SESSION['customer']['name'] ?>さん</p>
     <form action="post.php" method="post">
+</div>       
 <div class='left'>
         <p>名前：<input type="text" name="name" required></p>
         <p>コメント：<br>
