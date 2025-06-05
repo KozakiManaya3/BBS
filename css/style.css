@@ -13,7 +13,7 @@ form, .post {
     border-radius: 8px;
     margin-bottom: 1em;
     box-shadow: 0 0 5px #ccc;
-    margin: auto;
+    margin: 0 300px;
 
 }
 textarea {
