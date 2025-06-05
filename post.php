@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php
 $name = htmlspecialchars($_POST['name'] ?? '名無し');
 $comment = htmlspecialchars($_POST['comment'] ?? '');
@@ -16,7 +17,7 @@ try {
 
     $stmt = $pdo->prepare("INSERT INTO comment (user_id, content, created_at) VALUES (:user_id, :content, :created_at)");
     $stmt->execute([
-        ':user_id' => $_SESSION['customer'],
+        ':user_id' => $_SESSION['customer']['id'],
         ':content' => $comment,
         ':created_at' => $time
     ]);
