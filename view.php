@@ -17,10 +17,10 @@ try {
         ]);
 
         // コメント一覧を取得（最新順）、ユーザー名もJOINで取得
-        $sql = "SELECT comments.comment, comments.created_at, users.name
-                FROM comments
-                JOIN users ON comments.user_id = users.id
-                ORDER BY comments.created_at DESC";
+        $sql = "SELECT comment.content, comment.created_at, user.name
+                FROM comment
+                JOIN user ON comment.user_id = user.id
+                ORDER BY comment.created_at DESC";
 
         $stmt = $pdo->query($sql);
         $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
