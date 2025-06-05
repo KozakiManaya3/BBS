@@ -14,7 +14,7 @@ try {
         'LAA1553893',
         'Bbspass');
 
-    $stmt = $pdo->prepare("INSERT INTO comments (name, comment, created_at) VALUES (:name, :comment, :created_at)");
+    $stmt = $pdo->prepare("INSERT INTO comment (name, comment, created_at) VALUES (:name, :comment, :created_at)");
     $stmt->execute([
         ':name' => $name,
         ':comment' => $comment,
