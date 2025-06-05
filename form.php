@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,6 +7,7 @@
     <title>一言掲示板 - 投稿</title>
 </head>
 <body>
+    <p>ようこそ、<?= $_SESSION['customer']['name'] ?>さん</p>
     <h1>💬 一言掲示板</h1>
     <form action="post.php" method="post">
         <p>名前：<input type="text" name="name" required></p>
