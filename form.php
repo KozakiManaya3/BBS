@@ -10,8 +10,10 @@
     <h1>💬 一言掲示板</h1>
     <p>ようこそ、<?= $_SESSION['customer']['name'] ?>さん</p>
     <form action="post.php" method="post">
+<div class='left'>
         <p>名前：<input type="text" name="name" required></p>
         <p>コメント：<br>
+</div>
         <textarea name="comment" rows="4" cols="40" required></textarea></p>
         <p><button type="submit">投稿する</button></p>
     </form>
