@@ -18,7 +18,7 @@ try {
                     'Bbspass');
 
         // コメント一覧を取得（最新順）、ユーザー名もJOINで取得
-        $sql = "SELECT comment.content, comment.created_at, user.name
+        $sql = "SELECT comment.content, comment.created_at, user.username
                 FROM comment
                 JOIN user ON comment.user_id = user.id
                 ORDER BY comment.created_at DESC";
@@ -31,8 +31,8 @@ try {
         } else {
             foreach ($comments as $row) {
                 $time = htmlspecialchars($row['created_at']);
-                $name = htmlspecialchars($row['name']);
-                $comment = nl2br(htmlspecialchars($row['comment']));
+                $name = htmlspecialchars($row['username']);
+                $comment = nl2br(htmlspecialchars($row['content']));
 
                 echo "<div class='post'>";
                 echo "<p><strong>$name</strong> さん ($time)</p>";
