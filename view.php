@@ -35,8 +35,8 @@ try {
                 $comment = nl2br(htmlspecialchars($row['content']));
                 echo "<div class='center'>";
                 echo "<strong>$name</strong> さん ($time)";
-                echo    "<br>";
                 echo "</div>";
+                echo    "<br>";
                 echo "<div class='post'>";
                 echo "$comment <br>";
                 echo "</div><br><hr>";
