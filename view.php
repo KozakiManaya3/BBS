@@ -31,8 +31,8 @@ try {
         } else {
             foreach ($comments as $row) {
                 $time = htmlspecialchars($row['created_at']);
-                $name = htmlspecialchars($row['name']);
-                $comment = nl2br(htmlspecialchars($row['comment']));
+                $name = htmlspecialchars($row['username']);
+                $comment = nl2br(htmlspecialchars($row['content']));
 
                 echo "<div class='post'>";
                 echo "<p><strong>$name</strong> さん ($time)</p>";
