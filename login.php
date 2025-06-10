@@ -10,14 +10,18 @@
 </head>
 
 <body>
+    <div class="center">
     <h1>ログイン</h1>
+    </div>
     <form action="check.php" method="post">
         <p>ユーザー名：<input type="text" name="name"></p>
         <p>パスワード：<input type="password" name="pass"></p>
         <input type="submit" value="ログイン">
         <p><?= $_SESSION['login-msg']; ?></p>
     </form>
+    <div class="center">
     <a href="signup-input.php">新規登録</a>
+    </div>
 </body>
 
 </html>
