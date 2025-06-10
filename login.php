@@ -18,6 +18,7 @@
         <p>パスワード：<input type="password" name="pass"></p>
         <input type="submit" value="ログイン">
         <p><?= $_SESSION['login-msg']; ?></p>
+        <a href="signup-input.php">新規登録</a>
     </form>
     <div class="center">
     <a href="signup-input.php">新規登録</a>
