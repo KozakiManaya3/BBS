@@ -12,7 +12,6 @@
     <p>ようこそ、<?= $_SESSION['customer']['name'] ?>さん</p>
     </div>
     <form action="post.php" method="post">       
-        <p>名前：<input type="text" name="name" required></p>
         <p>コメント：<br>
         <textarea name="comment" rows="4" cols="40" required></textarea></p>
         <p><button type="submit">投稿する</button></p>

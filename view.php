@@ -12,9 +12,10 @@
     <?php
 
 try {
-        $pdo = new PDO($dsn, $user, $pass, [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        ]);
+        $pdo=new PDO('mysql:host=mysql320.phy.lolipop.lan;
+                    dbname=LAA1553893-bbs;',
+                    'LAA1553893',
+                    'Bbspass');
 
         // コメント一覧を取得（最新順）、ユーザー名もJOINで取得
         $sql = "SELECT comment.content, comment.created_at, user.name
