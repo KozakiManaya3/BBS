@@ -33,9 +33,9 @@ try {
                 $time = htmlspecialchars($row['created_at']);
                 $name = htmlspecialchars($row['username']);
                 $comment = nl2br(htmlspecialchars($row['content']));
-                echo "<p><strong>$name</strong> さん ($time)</p>";
+                echo "<strong>$name</strong> さん ($time)";
                 echo "<div class='post'>";
-                echo "<p>$comment</p>";
+                echo "$comment <br>";
                 echo "</div><hr>";
             }
         }
