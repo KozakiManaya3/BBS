@@ -18,7 +18,7 @@ try {
                     'Bbspass');
 
         // コメント一覧を取得（最新順）、ユーザー名もJOINで取得
-        $sql = "SELECT comment.content, comment.created_at, user.name
+        $sql = "SELECT comment.content, comment.created_at, user.username
                 FROM comment
                 JOIN user ON comment.user_id = user.id
                 ORDER BY comment.created_at DESC";
