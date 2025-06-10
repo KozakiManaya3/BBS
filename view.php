@@ -34,11 +34,13 @@ try {
                 $name = htmlspecialchars($row['username']);
                 $comment = nl2br(htmlspecialchars($row['content']));
                 echo "<div class='center'>";
+                echo    "<br>";
                 echo "<strong>$name</strong> さん ($time)";
                 echo "</div>";
                 echo "<div class='post'>";
                 echo "$comment <br>";
-                echo "</div><hr>";
+                echo "</div><br><hr>";
+                
             }
         }
 
