@@ -9,7 +9,7 @@
 <body>
     <div class='center'>
     <h1>💬 一言掲示板</h1>
-    <p>ようこそ、<?= $_SESSION['customer']['username'] ?>さん</p>
+    <p>ようこそ、<?= $_SESSION['customer']['name'] ?>さん</p>
     </div>
     <form action="post.php" method="post">       
         <p>コメント：<br>
