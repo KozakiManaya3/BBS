@@ -15,8 +15,8 @@
     </div>
     <form action="check.php" method="post">
          <div class="center">
-        <p>ユーザー名：<input type="text" name="name"></p>
-        <p>パスワード：<input type="password" name="pass"></p>
+        <p>ユーザー名：<input type="text" name="name" placeholder="こざき"></p>
+        <p>パスワード：<input type="password" name="pass" placeholder="Kozaki"></p>
         <input type="submit" value="ログイン">
         <p><?= $_SESSION['login-msg']; ?></p>
         <a href="signup-input.php">新規登録</a>
